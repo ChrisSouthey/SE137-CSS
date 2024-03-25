@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Repo page</title>
+
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     
-    <h1>Hello</h1>
+    <div id="nav">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
     
+    <div class="section">Div 1</div>
+    <div class="section hide">Div 2</div>
+    <div class="section hide">Div 3</div>
+
+    <script>
+        var a = Array.from(document.querySelectorAll(`#nav a`));
+        var div = document.querySelectorAll(`.section`);
+        console.log(a)
+
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, handler)
+        }
+
+        function handler(e)
+        {
+            e.preventDefault();
+            
+            for(let i=0; i<a.length; i++)
+            {
+                div[i].classList.remove(`hide`);
+            }
+        
+            div[a.indexOf(e.target)].classList.add(`hide`);
+           
+        }
+    </script>
 </body>
 </html>
