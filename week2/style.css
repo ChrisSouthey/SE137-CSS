@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+div {
+    color:purple;
+}
+
+.orange {
+    color:orange;
+}
+
+#bob {
+    color:red;
+}
+
+#bob b {
+    color:green;
+}
+
+a {
+    /*color:brown;*/
+}
+
+a:link {
+    color:brown;
+}
+
+a:visited {
+    color:brown;
+}
+
+a:hover {
+    color:blue;
+}
+
+a:active {
+    color:blue;
+}
+
+input[type="text"] {
+    background-color:yellow;;
+}
+
+
+
