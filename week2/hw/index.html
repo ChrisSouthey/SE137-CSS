@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Week 2 | Bio Page</title>
+
+    
+    <meta name="author" content="Chris Southey">
+    <meta name="description" content="Week 2 | Bio page">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="align">
+        <!--HEADER-->
+        <div id="header">
+            <h1>Chris Southey</h1>
+        </div>
+        
+
+        <!--NAV-->
+        <div id="nav">
+
+            <a href="#" class="color">Bio</a>
+            <br>
+            <a href="#" class="color">Education</a>
+            <br>
+            <a href="#" class="color">Hobbies</a>
+            <br>
+            
+        <hr>
+        </div>
+        
+
+        <!--CONTENT-->
+        <div id="main">
+            <div id="bio">
+                <h2>My Bio</h2>
+                <p>I like to play the guitar, <b>I currently own 7 guitars!</b> I love listening to music, my favorite type of music to listen to is rock and metal. I like to play video games and i am currently on one of the esports teams here at NEIT :D. My favorite color is red and my favorite season is fall. I have 2 pets, 1 cat named <u>Tigger</u> and 1 dog named <u>Willow.</u></p>
+                <img src="images/Me.JPG" alt="A picture of me" width="500" height="500">
+
+            <hr>    
+            </div>
+            
+
+            <div id="schooling" class="hide">
+                <h2>My Education</h2>
+                <ul>
+                    <li>South Side elementary School</li> 
+                    <br>
+                    <li>Chippens Hill Middle School</li>
+                    <br>
+                    <li><a href="https://bchs.bristol.k12.ct.us/" target="_blank" class="color">Bristol Central High School</a></li>
+                    <br>
+                    <img src="images/School.JPG" alt="My high school" width="500">
+
+                    
+                </ul>
+            <hr>
+            </div>
+           
+
+            <div id="hobbies" class="hide">
+                <h2>My hobbies</h2>
+                <ul>
+                    <li>Playing my guitars</li>
+                    <br>
+                    <img src="images/Guitar.JPG" alt="My 8 string Guitar" width="500">
+                    <br>
+                    <br>
+                    <br>
+                    <li>Playing with my dog</li>
+                    <br>
+                    <img src="images/Dog.JPG" alt="My dog" width="500">
+                    <br>
+                    <br>
+                    <br>
+                    <li>Playing games on my computer</li>
+                    <br>
+                    <img src="images/Computer.JPG" alt="My home computer setup" width="500">
+                    <br>
+                    <br>    
+                    <br>
+
+                    
+                </ul>
+                
+            <hr>
+            </div>
+            
+        </div>
+
+        <!--FOOTER-->
+        <div id="footer">
+
+            <h3>&copy;2024 Chris Southey | W1 assignment</h3>
+
+        </div>
+
+        
+    </div>
+    
+    <script>
+
+        var a = Array.from(document.querySelectorAll(`#nav a`));
+
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, hide)
+        }
+
+        function hide(e)
+        {
+            e.preventDefault();
+
+            var div = document.querySelectorAll(`#main div`)
+        
+            for(let i=0; i<div.length; i++)
+            {
+                div[i].classList.add(`hide`);
+            }
+        
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+        }
+
+    </script>
+</body>
+</html>

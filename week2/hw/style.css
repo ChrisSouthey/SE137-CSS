@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+#align {
+    margin-left: 25px;
+}
+
+/*.color {
+    color: white;
+} */
+
+.hide{
+    display: none;
+}
+
+#header {
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    background-color:red
+}
+
+
