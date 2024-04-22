@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+main{
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+#one{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#two{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
