@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+main{
+    background-color: lime;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 23px;
+    background-color: #505050;
+}
+
+section{
+    background-color: cyan;
+    height: 100%;
+    display: flex;
+}
+
+aside{
+    width: 45px;
+    background-color: #505050;
+}
+
+.tray{
+    width: 144px;
+    min-width: 144px;
+    background-color: #7B7575;
+    transition: all 1s;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.hide{
+    min-width: 0;
+    width: 0;
+    transition: width 1s;
+}
+
+div.tray div{
+    box-sizing: border-box;
+    width: 144px;
+    min-width: 144px;
+}
+
+#program{
+    background-color: lime;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    background-color: #060606;
+    height: 34px;
+    display: flex;
+}
+
+button{
+    width: 173px;
+    background-color: #373737;
+    border: 0 solid black;
+    margin-right: 2px;
+    color:white;
+}
+
+button:last-child{
+    margin: 0;
+}
+
+.active{
+    background-color: #161616;
+}
+
+#breadcrumbs{
+    background-color: #161616;
+    height: 23px;
+}
+
+textarea{
+    height: 100%;
+    width: 100%;
+    background-color: #060606;
+    border: 0 solid #060606;
+    outline:0;
+    resize: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+footer{
+    height: 16px;
+    background-color: #0254A0;
+    border: solid white 1px
+}
