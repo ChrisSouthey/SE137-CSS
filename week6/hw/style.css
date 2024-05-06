@@ -1,106 +1,204 @@
 @charset "UTF-8";
 
-html{
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
     height: 100%;
 }
 
-body{
+body {
     height: 100%;
     margin: 0;
+    font-family: Roboto;
 }
 
-main{
+main {
     background-color: lime;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-header{
+
+/*Header stuff*/
+header {
     height: 23px;
     background-color: #505050;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
 }
 
-section{
+header p{
+    text-align: center;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 44px;
+}
+
+#settings-icon {
+    width: 13px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+
+/*Side Bar stuff*/
+section {
     background-color: cyan;
     height: 100%;
     display: flex;
 }
 
-aside{
+aside {
     width: 45px;
     background-color: #505050;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.tray{
+aside button {
+    width: 26px;
+    height: 32px;
+    background: url(icons/inbox-solid.svg);
+    background-repeat: no-repeat;
+    color: #E3E3E3;
+  
+}
+
+aside div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside .tiles{
+    width: 26px;
+    height: 32px;
+    margin-top: 10px;
+}
+
+aside .trash{
+    width: 26px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+
+/*Tray stuff*/
+.tray {
     width: 144px;
     min-width: 144px;
     background-color: #7B7575;
     transition: all 1s;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     overflow: hidden;
 }
 
-.hide{
+.tray summary {
+    margin-left: 10px;
+}
+
+.tray li {
+    border-top: #E3E3E3 solid 1px;
+    margin-left: 20px;
+}
+
+.hide {
     min-width: 0;
     width: 0;
     transition: width 1s;
 }
 
-div.tray div{
+div.tray div {
     box-sizing: border-box;
     width: 144px;
     min-width: 144px;
 }
 
-#program{
+#program {
     background-color: lime;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-nav{
+nav {
     background-color: #060606;
     height: 34px;
     display: flex;
 }
 
-button{
+button {
     width: 173px;
     background-color: #373737;
     border: 0 solid black;
     margin-right: 2px;
-    color:white;
+    color: white;
 }
 
-button:last-child{
+nav button:last-child {
     margin: 0;
 }
 
-.active{
+.active {
     background-color: #161616;
 }
 
-#breadcrumbs{
+#breadcrumbs {
     background-color: #161616;
     height: 23px;
 }
 
-textarea{
+textarea {
     height: 100%;
     width: 100%;
     background-color: #060606;
     border: 0 solid #060606;
-    outline:0;
+    outline: 0;
     resize: none;
     color: white;
     box-sizing: border-box;
 }
 
-footer{
+footer {
     height: 16px;
     background-color: #0254A0;
-    border: solid white 1px
+    border: solid white 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: white;
+    width: 66px;
+    height: 12px;
+    margin-left: 17px;
+}
+
+footer .bar{
+    width: 13px;
+    height: 16px;
+    margin-right: 5px;
 }
