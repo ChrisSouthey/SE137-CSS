@@ -49,7 +49,7 @@ header > div {
     margin-left: 44px;
 }
 
-#settings-icon {
+.settings{
     width: 13px;
     height: 16px;
     margin-right: 8px;
@@ -100,6 +100,9 @@ aside .trash{
     margin-bottom: 8px;
 }
 
+svg #icon:hover{
+    color: #000000;
+}
 
 /*Tray stuff*/
 .tray {
@@ -113,11 +116,23 @@ aside .trash{
     color: #E3E3E3;
     border-top: #E3E3E3 solid 1px;
     padding-bottom: 3px;
+    flex-direction: column;
+}
+
+.file:hover{
+    color: #FFFFFF;
+    transition: none;
+}
+
+.other:hover{
+    color: #FFFFFF;
+    transition: none;
 }
 
 .tray summary {
     margin-left: 10px;
     margin-bottom: 10px;
+    padding-top: 6px;
 }
 
 .tray #list{
@@ -127,13 +142,21 @@ aside .trash{
 .tray li {
     font-family: Roboto;
     margin-left: 30px;
+    margin-top: 12px;
     font-size: 12px;
-    display: inline-block;
+    display: inline-flex;
+    gap: 5px;
 }
 
 .tray li svg{
-     width: 13px;
+    width: 13px;
     height: 16px;
+}
+
+.tray .other{
+    border-top: #E3E3E3 solid 1px;
+    margin-top: 20px;
+    padding-top: 6px;
 }
 
 .hide {
@@ -159,6 +182,12 @@ nav {
     background-color: #060606;
     height: 34px;
     display: flex;
+}
+
+nav button svg{
+    width: 13px;
+    height: 16px;
+    display: inline;
 }
 
 button {
