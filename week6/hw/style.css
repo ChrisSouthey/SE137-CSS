@@ -110,15 +110,30 @@ aside .trash{
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    color: #E3E3E3;
+    border-top: #E3E3E3 solid 1px;
+    padding-bottom: 3px;
 }
 
 .tray summary {
     margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.tray #list{
+    border-top: #E3E3E3 solid 1px;
 }
 
 .tray li {
-    border-top: #E3E3E3 solid 1px;
-    margin-left: 20px;
+    font-family: Roboto;
+    margin-left: 30px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.tray li svg{
+     width: 13px;
+    height: 16px;
 }
 
 .hide {
@@ -151,7 +166,11 @@ button {
     background-color: #373737;
     border: 0 solid black;
     margin-right: 2px;
-    color: white;
+    color: #E3E3E3;
+}
+
+button:hover{
+    color: #ffffff;
 }
 
 nav button:last-child {
@@ -162,9 +181,30 @@ nav button:last-child {
     background-color: #161616;
 }
 
+/*Breadcrumbs stuff*/
 #breadcrumbs {
     background-color: #161616;
     height: 23px;
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1px;
+    padding-left: 10px;
+    gap: 3px;
+}
+
+#breadcrumbs div{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1px;
+    
+}
+
+#breadcrumbs span {
+    color: white;
 }
 
 textarea {
