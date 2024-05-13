@@ -1,0 +1,95 @@
+html, body{
+    margin:0;
+    height:100vh;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 1920px) {
+    body{
+        background-color: pink;
+    }
+
+    h1{
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+
+    thead{
+        font-size: 1em;
+        background-color: maroon;
+        color: red;
+    }
+
+    tr{
+        font-size: 1em;
+    }
+
+    tr:last-child{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: lightcyan;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    thead{
+        font-size: 1em;
+        background-color: lightskyblue;
+        color: blue;
+    }
+
+    tr{
+        font-size: 1em;
+    }
+
+    tr:first-child{
+        display: none;
+    }
+
+    tr:last-child{
+        display: contents;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        background-color: greenyellow;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    thead{
+        font-size: 1.5em;
+        background-color: lightgreen;
+        color: green;
+    }
+
+    tr{
+        font-size: 1.25em;
+    }
+
+    table .stat{
+        display: none;
+    }
+}
+
+table{
+    width:80%;
+    border-collapse: collapse;
+}
+ td{
+    border-bottom:1px solid black;
+}
