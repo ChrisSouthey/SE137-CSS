@@ -173,6 +173,14 @@ section{
     line-height: 52px;
 }
 
+#github a{
+    color: black;
+}
+
+#github  a:hover{
+    color: gray;
+}
+
 #contact {
     display: flex;
     flex-direction: column;
