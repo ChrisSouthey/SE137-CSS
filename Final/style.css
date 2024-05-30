@@ -71,6 +71,9 @@ header .nav{
 
 /*--------------------BODY----------------------------*/
 
+
+
+
 section{
     display: flex;
     flex-direction: column;
@@ -302,4 +305,145 @@ footer a:visited{
 
 footer a:active{
     text-decoration: none;
+}
+
+
+/*---------------SMALL SCREEN-------------------*/
+@media screen and (max-width: 500px)    {
+
+    body{
+        width: 500px;
+        height: 1600px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 500px;
+        height: 140px;
+    }
+
+    header h1{
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 62px;
+        margin-left: 50px;
+        width: 264px;
+        height: 99px;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
+        text-align: center;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    header a.name{
+        display: flex;
+        width: 264px;
+        height: 99px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    header a:active{
+        text-decoration: none;
+        color: white;
+    }
+
+    header .nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 25px;
+        column-gap: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+
+    .nav .featured{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31px;
+    }
+
+    .nav .proj{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31px;
+    }
+
+    #top{
+        display: flex;
+        flex-direction: column;
+        height: 366px;
+    }
+
+    #bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 1044px;
+    }
+
+    div #about{
+        flex-direction: column;
+    }
+
+    #about img{
+        margin-left: 0;
+        
+        width: 500px;
+    }
+
+    div #aboutme{
+        width: 500px;
+        margin-bottom: 0;
+    }
+
+    #contact{
+        order:3;
+        margin-left: 0;
+        margin-top: 0;
+        width: 500px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+
+    #icons{
+       justify-content: flex-end;
+    }
+
+    section{
+        width: 500px;
+        height: 1410px;
+    }
+
+    div #github{
+        display: none;
+    }
+
+    div #desc{
+        display: none;
+    }
+
+    footer{
+        width: 500px;
+        height: 50px;
+    }
+
+    .hero{
+        width: 500px;
+        height: 366px;
+        margin-top: 0;
+    }
+
+    #renpy{
+        width: 500px;
+        height: 366px;
+        margin-top: 0;
+    }
 }

@@ -328,3 +328,130 @@ footer a:visited{
 footer a:active{
     text-decoration: none;
 }
+
+
+/*---------------SMALL SCREEN-------------------*/
+@media screen and (max-width: 500px)    {
+
+    body{
+        width: 500px;
+        height: 1600px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 500px;
+        height: 140px;
+    }
+
+    header h1{
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 62px;
+        margin-left: 25px;
+        width: 264px;
+        height: 99px;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
+        text-align: center;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    header a.name{
+        display: flex;
+        width: 264px;
+        height: 99px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    header a:active{
+        text-decoration: none;
+        color: white;
+    }
+
+    header .nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 0px;
+        column-gap: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+
+    .nav .featured{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31px;
+    }
+
+    .nav .proj{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31px;
+    }
+
+    #top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 1410px;
+    }
+
+    #proj1{
+        display: none;
+    }
+
+    #top #proj2{
+        width: 500px;
+        height: 390px;
+        margin-bottom: 50px;
+    }
+
+    #proj2 img{
+        width: 259px;
+        height: 390px;
+    }
+
+    #bottom .w6{
+        display: none;
+    }
+
+    #bottom #proj3{
+        width: 500px;
+        height: 390px;
+        margin-bottom: 50px;
+    }
+
+    #bottom #proj4{
+        width: 500px;
+        height: 390px;
+    }
+
+    #proj4 img{
+        width: 246.26px;
+        height: 390px;
+    }
+
+    footer{
+        width: 500px;
+        height: 50px;
+    }
+
+}
