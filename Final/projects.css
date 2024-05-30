@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------HEADER------------------*/
+header{
+    background-color: rgb(254, 234, 88);
+    width: 1920px;
+    height: 140px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    color: #646464;
+}
+
+header a:link{
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+header a:visited{
+    text-decoration: none;
+}
+
+header a:active{
+    text-decoration: none;
+}
+
+header h1{
+    font-family: Metal Mania;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 119px;
+    
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: black;
+    width: 573px;
+    height: 99px;
+    margin-right: 118px;
+    margin-left: 674px;
+    margin-top: 18px;
+}
+
+header .nav{
+    display: flex;
+    font-family: Metal Mania;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    color:#646464;
+    gap: 40px;
+    width: 500px;
+    height: 76px;
+    margin-right: 44px;
+    margin-top: 32px;
+}
+
+
+/*--------------------BODY----------------------*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: 890px;
+    width: 1920px;
+    background-color: #FF7F7F;
+    margin: 0;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+}
+
+#bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    margin-top: 20px;
+}
+
+/*-------------------Project1----------------------*/
+#proj1{
+    background-color: rgb(254, 245, 174);
+    display: flex;
+    flex-direction: row;
+}
+
+#top #proj1{
+    width: 628.6px;
+    height: 390px;
+}
+
+#proj1 img{
+    width: 315px;
+    height: 390px;
+}
+
+#proj1 .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 234px;
+    height: 271px;
+    font-family: Lemon;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+    margin-left: 41px;
+    margin-top: 15px;
+}
+
+#proj1 a{
+    font-family: Lemon;
+    text-decoration: underline black 3px solid;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    width: 141px;
+    height: 52px;
+    text-underline-offset: 10px;
+    color: black;
+}
+
+#proj1 a:hover{
+    color:gray;
+}
+
+/*-------------------Project2----------------------*/
+#proj2{
+    background-color: rgb(232, 0, 37);
+    display: flex;
+    flex-direction: row;
+}
+
+#top #proj2{
+    width: 628.6px;
+    height: 390px;
+}
+
+#proj2 img{
+    width: 315px;
+    height: 390px;
+}
+
+#proj2 .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 234px;
+    height: 271px;
+    font-family: Lemon;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+    margin-left: 41px;
+    margin-top: 15px;
+}
+
+#proj2 a{
+    font-family: Lemon;
+    text-decoration: underline black 3px solid;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    width: 141px;
+    height: 52px;
+    text-underline-offset: 10px;
+    color: black;
+}
+
+#proj2 a:hover{
+    color:gray;
+}
+
+/*-------------------Project3----------------------*/
+#proj3{
+    background-color: rgb(232, 0, 37);
+    display: flex;
+    flex-direction: row;
+}
+
+#bottom #proj3{
+    width: 628.6px;
+    height: 390px;
+}
+
+#proj3 img{
+    width: 315px;
+    height: 390px;
+}
+
+#proj3 .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 234px;
+    height: 271px;
+    font-family: Lemon;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+}
+
+#proj3 a{
+    font-family: Lemon;
+    text-decoration: underline black 3px solid;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    width: 141px;
+    height: 52px;
+    text-underline-offset: 10px;
+    color: black;
+}
+
+#proj3 a:hover{
+    color:gray;
+}
+
+/*-------------------Project4----------------------*/
+#proj4{
+    background-color: rgb(254, 245, 174);
+    display: flex;
+    flex-direction: row;
+}
+
+#bottom #proj4{
+    width: 628.6px;
+    height: 390px;
+}
+
+#proj4 img{
+    width: 315px;
+    height: 390px;
+}
+
+#proj4 .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 234px;
+    height: 271px;
+    font-family: Lemon;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+}
+
+#proj4 a{
+    font-family: Lemon;
+    text-decoration: underline black 3px solid;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    width: 141px;
+    height: 52px;
+    text-underline-offset: 10px;
+    color: black;
+}
+
+#proj4 a:hover{
+    color:gray;
+}
+
+/*----------------FOOTER----------------------*/
+
+footer{
+    display: flex;
+    height: 50px;
+    width: 1920;
+    background-color: rgb(254, 234, 88);
+    justify-content: space-between;
+    align-items: center;
+    font-family: Lemon;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+footer h3{
+    margin-left: 20px;
+    color: rgb(100, 100, 100);
+}
+
+footer a{
+    margin-right: 20px;
+    color: rgb(100, 100, 100)
+}
+
+footer a:link{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited{
+    text-decoration: none;
+}
+
+footer a:active{
+    text-decoration: none;
+}
